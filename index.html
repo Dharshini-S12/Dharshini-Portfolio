@@ -7,9 +7,364 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav>
-        
+    <!--navihation-ends-->
+    <nav id="desktop-nav">
+        <div class="logo">Dharshini</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Blogs">Blogs</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>   
+    <nav id="hamburger-nav">
+        <div class="logo">Dharshini</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Blogs" onclick="toggleMenu()">Blogs</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
     </nav>
-    
+    <!--Navigation-ends-->
+    <!--Home-starts-->
+    <section id="Home">
+        <div class="section-pic-container">
+            <img src="/images/profile-pic.jpeg" alt="Dharsh-pic" class="pic">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Dharshini</h1>
+            <p class="section-text-p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./images/Dharshini-resume.pdf')">Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contact'">Contact Info
+                </button>
+            </div>
+            <div id="social-container">
+                <img src="/images/linkedin.png" alt="linkedin" class="icon" onclick="location.href='http://www.linkedin.com/in/dharhini-selvaraj'">
+                <img src="/images/github.png" alt="github" class="icon" onclick="location.href='http://www.github.com/Dharshini-S12'">
+            </div>
+        </div>
+    </section>
+    <!--Home-ends-->
+    <!--About-starts-->
+    <section id="About">
+        <p class="section-text-p1">Get To Know More</p>
+        <h1 class="title">Get About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="/images/about-pic.jpeg" alt="pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="/images/education.png" alt="pic" class="icon">
+                        <h3>Education</h3>
+                        <p>B.tech <br>Information Technology</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="/images/experience.png" alt="pic" class="icon">
+                        <h3>Experienced-Fields</h3>
+                        <p>Front-end<br> Cloud </p>
+                    </div>  
+                </div>
+                <div class="text-container">
+                    <p>Hello, I'm Dharshini, a passionate front-end developer dedicated to creating engaging and 
+                        user-friendly web experiences. With a keen eye for design and a love for coding, I bring 
+                        creativity and functionality together to build modern and responsive websites.
+                        I believe in creating not just visually appealing websites but also ensuring a seamless and 
+                        delightful user experience. I pay attention to every detail to make sure the end-users enjoy 
+                        their time on the websites I create.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--img src="/images/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#Skills'"-->
+    </section>
+    <!--About-ends-->
+    <!--Experience-starts-->
+    <section id="Experience">
+        <p class="section-text-p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">SKILL</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="/images/checkmark.png" alt="skill" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/images/checkmark.png" alt="skill" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/images/checkmark.png" alt="skill" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/images/checkmark.png" alt="skill" class="icon">
+                            <div>
+                                <h3>ReactJS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/images/checkmark.png" alt="skill" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="" alt="" class="icon">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">TOOLS</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="/images/checkmark.png" alt="skill" class="icon">
+                            <div>
+                                <h3>VS Code</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/images/checkmark.png" alt="skill" class="icon">
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/images/checkmark.png" alt="skill" class="icon">
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/images/checkmark.png" alt="skill" class="icon">
+                            <div>
+                                <h3>Netlify</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/images/checkmark.png" alt="skill" class="icon">
+                            <div>
+                                <h3>Medium</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="" alt="" class="icon">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Experience-ends-->
+    <!--Project-Starts-->
+    <section id="Projects">
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="/images/project-1.png" alt="p1" class="project-img" >
+                </div>
+                <h2 class="experience-subtitle project-title">Hotstar Clone</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Dharshini-S12/Hotstar-clone'">
+                       GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://hotstarclone-phi.vercel.app/'">
+                        Live Demo
+                     </button>
+                </div>
+            </div> 
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="/images/project-2.png" alt="p1" class="project-img" >
+                </div>
+                <h2 class="experience-subtitle project-title">Interns'23</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Dharshini-S12/Spotknack-Interns'">
+                       GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://spotknack-interns.vercel.app/'">
+                        Live Demo
+                     </button>
+                </div>
+            </div> 
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="/images/project-3.png" alt="p1" class="project-img" >
+                </div>
+                <h2 class="experience-subtitle project-title">Calculator</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Dharshini-S12/Calculator'">
+                       GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://calculator-eta-teal.vercel.app/'">
+                        Live Demo
+                     </button>
+                </div>
+            </div> 
+            
+        </div>
+        </div>
+    </section>
+    <!--Project-ends-->
+    <!--Blog-starts-->
+    <section id="Blogs">
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Blogs</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="/images/blog-1.png" alt="p1" class="project-img" >
+                </div>
+                <h2 class="experience-subtitle project-title">Spotknack</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@dharshiniselvaraj12122003/spotknack-11e467058798'">
+                       Read Now
+                    </button>
+                </div>
+            </div> 
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="/images/blog-2.png" alt="p1" class="project-img" >
+                </div>
+                <h2 class="experience-subtitle project-title">JavaScript</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@dharshiniselvaraj12122003/java-script-e070d7ad61d6'">
+                       Read Now
+                    </button>
+                </div>
+            </div> 
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="/images/blog-3.png" alt="p1" class="project-img" >
+                </div>
+                <h2 class="experience-subtitle project-title">Focus on career!</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@dharshiniselvaraj12122003/what-helps-you-to-focus-on-your-career-fe7f169fae62'">
+                       Read Now
+                    </button>
+                </div>
+            </div> 
+            
+            
+        </div>
+        
+        </div>
+        <!--div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="/images/blog-4.png" alt="p1" class="project-img" >
+                </div>
+                <h2 class="experience-subtitle project-title">Is India ready for EV?</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@dharshiniselvaraj12122003/is-india-ready-for-ev-017be7691069'">
+                       Read Now
+                    </button>
+                </div>
+            </div> 
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="/images/blog-5.png" alt="p1" class="project-img" >
+                </div>
+                <h2 class="experience-subtitle project-title">Procrastination</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@dharshiniselvaraj12122003/unlocking-the-psychology-of-procrastination-why-do-we-procrastinate-and-how-to-overcome-it-1f4f5ca7600d'">
+                       Read Now
+                    </button>
+                </div>
+            </div> 
+               
+        </div-->
+        
+        </div>
+    </section>
+    <!--Blog-ends-->
+    <!--contact-starts-->
+    <section id="Contact">
+        <p class="section-text-p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="/images/email.png" alt="email" class="icon contact-icon email-icon">
+                <p><a href="dharshiniselvaraj12122003@gmail.com">Email</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="/images/linkedin.png" alt="email" class="icon contact-icon">
+                <p><a href="http://www.linkedin.com/in/dharhini-selvaraj">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <!--contact-ends-->
+    <!--Footer-starts-->
+    <footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Blogs">Blogs</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; Dharshini. All Rights Reserved.</p>
+    </footer>
+    <!--Footer-ends-->
+    <script>
+        function toggleMenu(){
+            const menu = document.querySelector(".menu-links");
+            const icon = document.querySelector(".hamburger-icon");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+    </script>
 </body>
 </html>
