@@ -455,5 +455,8 @@ footer p{
         margin-top: -40px;
         border-radius: 50%;
     }
+    #Blogs{
+        height: 208vh;
+    }
 }
 /*mediaquery-end*/
