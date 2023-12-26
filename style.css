@@ -307,9 +307,6 @@ article .icon{
 }
 
 /*Project-ends*/
-#Blogs{
-    height: 142vh;
-}
 /*contact-starts*/
 #Contact{
     display: flex;
@@ -454,9 +451,6 @@ footer p{
         height: 250px;
         margin-top: -40px;
         border-radius: 50%;
-    }
-    #Blogs{
-        height: 230vh;
     }
 }
 /*mediaquery-end*/
