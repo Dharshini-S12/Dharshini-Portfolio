@@ -307,6 +307,9 @@ article .icon{
 }
 
 /*Project-ends*/
+#Blogs{
+    height: 142vh;
+}
 /*contact-starts*/
 #Contact{
     display: flex;
